@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #dbe2ed;
+    min-height: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    height: auto;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 70px; 
+    z-index: 100;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2cm;
+    color: #350B35;
+    pointer-events: none;
+    margin-right: 20px; 
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #350B35 ;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navegacion a:hover,
+.navegacion a.active {
+    background: #350B35 ;
+    color: #fff;
+}
+
+.secInicio{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    margin: 0;
+}
+
+#cumbrestext{
+    position: absolute;
+    font-size: 10vw;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+}
+
+#mendoza {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;*/
+    pointer-events: none;
+    height: 100%; /* Establece la altura deseada */
+    width: 120%;   /* Mantiene el ancho automático */
+}
+
+.secGaleria {
+  background-color: #dbe2ed;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea a la izquierda desde la perspectiva de la sección */
+  margin: 0;
+  padding: 20px; /* Agregué un espacio de relleno para separar de los bordes */
+  width: 100%;
+  height: 100vh; /* Cambia este valor según tus preferencias */
+}
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.servtext {
+  width: 50vh;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-left: 10vh;
+  height: 80%;
+  font-size: 20px
+}
+.img-gallery {
+  width: 60%; /* Ajusta el ancho de la mitad derecha según tus necesidades */
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  height: 80%;
+}
+
+.img-gallery img {
+  width: 105%;
+  cursor: pointer;
+  transition: 1s;
+  height: 60%;
+}
+
+.img-gallery img:hover {
+  transform: scale(1.2);
+}
+
+.ful-img {
+  width: 50%; /* Ajusta el ancho de la mitad derecha según tus necesidades */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  transform: translateX(-50%); /* Centrar horizontalmente */
+}
+
+.ful-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ful-img img {
+  width: 90%;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  .h1Gal,
+  .servtext,
+  .img-gallery,
+  .ful-img {
+    width: 100%; /* Cambia a diseño de una columna en pantallas más pequeñas */
+  }
+}
+
+
+
+.Secempleo {
+  background-color: #350B35;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+  padding: 0;
+  margin-bottom: 0%;
+}
+
+.empleoContainer {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 70vw;
+	max-width: 100%;
+  margin: 0;
+}
+
+.empleoHeader {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+  
+}
+
+.empleoHeader h2 {
+	flex-direction: column;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.empleoHeader h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    text-align: center; /* Alineación horizontal */
+}
+
+.empleoForm {
+    padding: 20px; /* Agregar espacio alrededor del contenido del formulario */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Incluir el padding en el ancho total del formulario */
+    margin: 20px; /* Agregar márgenes laterales al formulario */
+  }
+
+.form-control {
+	margin-bottom: 20px;
+	position: relative;
+  box-sizing: border-box;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.empleoForm select {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; /* Espaciado opcional después de la barra desplegable */
+    box-sizing: border-box; /* Incluir el padding en el ancho total del input */
+  }
+
+  /* Ajustar el espacio entre las opciones del select */
+  .empleoForm select option {
+    margin: 5px 0;
+}
+  
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* Incluir el padding en el ancho total del input */
+}
+
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.exito input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.BotonSubmit {
+  background-color: #350B35;
+  border: 2px solid #350B35;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.BotonSubmit:hover {
+    background-color: #1f0730; /* Cambiar el color al pasar el ratón por encima */
+  }
+
+/* ---- NUEVA SECCIÓN ---- */
+
+.Autor {
+  background-color: #dbe2ed; /* Color de fondo personalizado */
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/*
+.Autor p {
+  color: #350B35; /* Color del texto personalizado */
+  /*font-size: 18px; /* Tamaño del texto personalizado */
+  /*text-align: center; /* Alineación del texto */
+  /*max-width: 80%; /* Ancho máximo del párrafo */
+  /*line-height: 1.6; /* Altura de línea */
+/*}
+*/
+  /* Agrega estilos adicionales si es necesario */
+/* Agrega estilos adicionales si es necesario */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fab {
+  font-size: 40px;
+  margin: 0 10px;
+  color: #db343c; /* Puedes cambiar el color según tus preferencias */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.fab:hover {
+  color: #2077b4; /* Cambia el color al pasar el ratón por encima */
+}
+
+ /* Estilo de la sección de la galería */
+ /*.secGaleria {
+    width: 150%;
+    text-align: center;
+    background-color: #f4f4f4; /* Color de fondo opcional */
+    /*padding: 20px 0 0; /* Espaciado opcional */
+    /*margin-bottom: -20px;
+  } */
+  /* Estilo del contenedor del slider */
+  /*.galeriaSlider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Estilo del contenedor de imágenes */
+  /*.galeriaContainer {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    /* max-width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    /* margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0; /* Ajusta el espaciado según tus necesidades */
+    /* background: #f4f4f4; /* Puedes cambiar esto por un color o una URL de imagen */
+    /* border-radius: 15px; /* Ajusta el valor según tu preferencia */
+ /*  }
+  
+  
+  .galeriaContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+/*
+#secGaleria {
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  overflow: hidden; /* Asegurar que cualquier contenido adicional se oculte */
+/*}
+
+#galeriaContainer {
+  transition: transform 0.3s ease;
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 600px; /* Ajusta según tus necesidades */
+ /* margin: 0 auto; /* Centrar el contenedor horizontalmente */
+/*}
+
+/*.img1,
+.img2,
+.img3,
+.img4 {
+  flex: 0 0 auto; /* Hacer que las imágenes no crezcan más allá de su tamaño original */
+  /*max-height: 100%; /* Ajustar la altura máxima permitida */
+  /*margin: 0 10px; /* Agregar un margen entre imágenes */
+/*}
+
+/* Estilo para las imágenes dentro del contenedor de la galería */
+/*#galeriaContainer img {
+  /*width: 100%; /* Ajustar el ancho automáticamente para llenar el contenedor */
+  /*max-height: 100%; /* Ajustar la altura máxima permitida */
+  /*object-fit: cover; /* Evitar que la imagen se estire */
+/*}
+
+/* Estilo para las flechas del carrusel */
+/*.carousel-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px; /* Ancho de las flechas */
+  /*height: 30px; /* Altura de las flechas */
+/*}
+
+.carousel-prev {
+  left: 10px; /* Posición izquierda para la flecha anterior */
+/*}
+
+.carousel-next {
+  right: 10px; /* Posición derecha para la flecha siguiente */
+/*}
+*/

@@ -1,0 +1,24 @@
+{
+  "puestosHotel": [
+    {"id": 1, "nombre": "Recepcionista"},
+    {"id": 2, "nombre": "Personal de limpieza"},
+    {"id": 3, "nombre": "Conserje"},
+    {"id": 4, "nombre": "Camarero"},
+    {"id": 5, "nombre": "Chef de cocina"},
+    {"id": 6, "nombre": "Gerente"},
+    {"id": 7, "nombre": "Subgerente"},
+    {"id": 8, "nombre": "Jefe de mantenimiento"},
+    {"id": 9, "nombre": "Portero"},
+    {"id": 10, "nombre": "Jefe de seguridad"},
+    {"id": 11, "nombre": "Coordinador de eventos"},
+    {"id": 12, "nombre": "Técnico de mantenimiento"},
+    {"id": 13, "nombre": "Supervisor de habitaciones"},
+    {"id": 14, "nombre": "Director de marketing"},
+    {"id": 15, "nombre": "Entrenador de fitness"},
+    {"id": 16, "nombre": "Botánico"},
+    {"id": 17, "nombre": "Analista financiero"},
+    {"id": 18, "nombre": "Encargado de compras"},
+    {"id": 19, "nombre": "Técnico informático"},
+    {"id": 20, "nombre": "Arquitecto de interiores"}
+  ]
+}
